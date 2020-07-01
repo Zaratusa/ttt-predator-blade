@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/weapons/v_models/zaratusa.predator.blade/glove1"
+	"$bumpmap" "models/weapons/v_models/zaratusa.predator.blade/glove1_normal"
+	"$envmap" "env_cubemap"	
+	"$envmaptint" "[.1 .1 .1]"
+	"$normalmapalphaenvmapmask" "models/weapons/v_models/zaratusa.predator.blade/glove1_ref"
+}
