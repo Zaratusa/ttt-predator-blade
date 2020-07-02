@@ -18,6 +18,15 @@ SWEP.EquipMenuData = {
 	desc = "predator_blade_desc"
 }
 
+hook.Add("TTT2ScoreboardAddPlayerRow", "ZaratusasTTTMod", function(ply)
+	local ID64 = ply:SteamID64()
+	local ID64String = tostring(ID64)
+
+	if (ID64String == "76561198032479768") then
+		AddTTT2AddonDev(ID64)
+	end
+end)
+
 function SWEP:DrawHUD()
 	local tr = self:GetOwner():GetEyeTrace(MASK_SHOT)
 	local ent = tr.Entity
